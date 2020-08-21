@@ -1003,7 +1003,7 @@ make sure this only happens on large viewports / desktop-ish devices.
     flex-direction: column;
     align-items: center;
     overflow: hidden;
-    margin: 25px 0 50px;
+    margin: 25px 170px 50px;
     background: color-mod(var(--lightgrey) l(+10%));
     border-radius: 3px;
 }
@@ -1026,17 +1026,32 @@ make sure this only happens on large viewports / desktop-ish devices.
 }
 
 @media (max-width: 1170px) {
+    .post-full-image {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
     .post-full-content {
         padding: 0 11vw;
     }
 }
 @media (max-width: 800px) {
+    .post-full-image {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
     .post-full-content {
         padding: 0 5vw;
         font-size: 1.8rem;
     }
 }
 @media (max-width: 500px) {
+    .post-full-image {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
     .post-full-custom-excerpt {
         font-size: 1.9rem;
         line-height: 1.5em;
