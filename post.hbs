@@ -106,6 +106,19 @@ into the {body} of the default.hbs template --}}
             <section class="post-full-content">
                 <div class="post-content">
                     {{content}}
+
+                    {{#if tags}}
+                    <div class="post-tags">
+                        <h3>{{t "Tags"}}</h3>
+                        <ul>
+                            {{#foreach tags}}
+                                <li>
+                                    <a href="{{url}}" title="{{name}}">{{name}}</a>
+                                </li>
+                            {{/foreach}}
+                        </ul>
+                    </div>
+                    {{/if}}
                 </div>
             </section>
 

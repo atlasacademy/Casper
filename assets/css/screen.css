@@ -3094,3 +3094,17 @@ Usage (In Ghost editor):
         color: color-mod(var(--green) l(+5%) s(-5%));
     }
 }
+
+.post-tags {
+    margin-top: 40px;
+    width: 100%;
+}
+
+.post-tags>ul {
+    list-style: none;
+    padding: 0;
+}
+
+.post-tags>ul>li {
+    display: inline-block;
+}
