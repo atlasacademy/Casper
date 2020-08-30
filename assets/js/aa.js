@@ -3,7 +3,7 @@
         narrow: function (svtId, ceId) {
             var html = "<div class='narrow'>",
                 servantAsset = "https://assets.atlasacademy.io/GameData/JP/NarrowFigure/" + svtId + "/" + svtId + "@0.png",
-                ceAsset = "https://assets.atlasacademy.io/GameData/NA/EquipFaces/f_" + ceId + "0.png";
+                ceAsset = "https://assets.atlasacademy.io/GameData/JP/EquipFaces/f_" + ceId + "0.png";
 
             html += "<img class='servant' src='" + servantAsset + "'/>";
             if (ceId)
