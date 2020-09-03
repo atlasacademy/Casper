@@ -62,6 +62,8 @@ function js(done) {
     pump([
         src([
             // pull in lib files first so our own code can depend on it
+            'node_modules/tablesort/dist/tablesort.min.js',
+            'node_modules/tablesort/dist/sorts/tablesort.number.min.js',
             'assets/js/lib/*.js',
             'assets/js/*.js'
         ], {sourcemaps: true}),

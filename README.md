@@ -21,3 +21,33 @@ Without CE
     narrow:100300
 </div>
 ```
+
+### tablesort
+
+Example
+```html
+<table class="tablesort">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Damage</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Altria</td>
+            <td data-sort-method='number'>1,111</td>
+        </tr>
+        <tr>
+            <td>Emiya</td>
+            <td data-sort-method='number'>999</td>
+        </tr>
+    </tbody>
+</table>
+```
+
+Notes:
+
+- table must have class tablesort
+- thead/tbody are required otherwise the headers are sorted along with the body
+- if you want the numeric values to be sorted as numbers, you need to define the data-sort-method attribute. sorting as string means 1111 is less than 999

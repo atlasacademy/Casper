@@ -35,3 +35,49 @@
     vertical-align: top !important;
     width: auto !important;
 }
+
+table.tablesort {
+    display: table;
+    width: 100%;
+}
+
+table.tablesort th[role=columnheader]:not(.no-sort) {
+    cursor: pointer;
+    padding-right: 25px;
+    position: relative;
+}
+
+table.tablesort th[role=columnheader]:not(.no-sort):after {
+    content: '';
+    border-width: 0 4px 4px;
+    border-style: solid;
+    border-color: #404040 transparent;
+    visibility: hidden;
+    opacity: 0;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+
+    position: absolute;
+    line-height: 100%;
+    right: 10px;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+table.tablesort th[aria-sort=descending]:not(.no-sort):after {
+    border-bottom: none;
+    border-width: 4px 4px 0;
+}
+
+table.tablesort th[aria-sort]:not(.no-sort):after {
+    visibility: visible;
+    opacity: 0.4;
+}
+
+table.tablesort th[role=columnheader]:not(.no-sort):hover:after {
+    visibility: visible;
+    opacity: 1;
+}
