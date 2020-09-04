@@ -41,9 +41,23 @@ table.tablesort {
     width: 100%;
 }
 
+table.tablesort th {
+    text-align: center;
+}
+
+table.tablesort td {
+    padding: 12px;
+    text-align: center;
+}
+
+table.tablesort img {
+    display: inline-block;
+    margin: 0;
+}
+
 table.tablesort th[role=columnheader]:not(.no-sort) {
     cursor: pointer;
-    padding-right: 25px;
+    padding: 6px 25px;
     position: relative;
 }
 
