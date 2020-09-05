@@ -2,6 +2,16 @@
 
 ## Helpers
 
+### horizontal-scroll
+
+Wrap an element with this helper to enable scroll if the element is too wide to fit
+
+```html
+<div class="horizontal-scroll">
+    ...
+</div>
+```
+
 ### narrow
 
 Normal

@@ -95,3 +95,9 @@ table.tablesort th[role=columnheader]:not(.no-sort):hover:after {
     visibility: visible;
     opacity: 1;
 }
+
+.horizontal-scroll.show {
+    overflow-x: scroll;
+    white-space: nowrap;
+    width: 100%;
+}
